@@ -1,0 +1,169 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#020617;
+  color:#e5e7eb;
+}
+
+/* NAVBAR */
+header{
+  position:fixed;
+  width:100%;
+  background:#020617;
+  z-index:100;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 40px;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  gap:20px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  padding-top:80px;
+}
+
+.hero img{
+  width:280px;
+  border-radius:50%;
+  border:4px solid #38bdf8;
+}
+
+/* SECTION */
+section{
+  padding:80px 20px;
+  text-align:center;
+}
+
+h2{
+  color:#38bdf8;
+  margin-bottom:30px;
+}
+
+/* ===== SKILLS ===== */
+#skills{
+  padding:80px 20px;
+  text-align:center;
+}
+
+#skills h2{
+  color:#38bdf8;
+  margin-bottom:30px;
+}
+
+.skill{
+  max-width:500px;
+  margin:15px auto;
+  text-align:left;
+}
+
+.skill span{
+  font-size:15px;
+}
+
+.bar{
+  height:8px;
+  background:#1e293b;
+  border-radius:10px;
+  margin-top:6px;
+  overflow:hidden;
+}
+
+.bar div{
+  height:100%;
+  width:0;
+  background:#38bdf8;
+  border-radius:10px;
+  transition:width 1.5s ease;
+}
+
+
+.bar{
+  height:8px;
+  background:#1e293b;
+  border-radius:10px;
+}
+
+.bar div{
+  height:100%;
+  background:#38bdf8;
+}
+
+/* PROJECTS */
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.project-card{
+  height:180px;
+  background:#1e293b;
+  position:relative;
+  overflow:hidden;
+}
+
+.overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(56,189,248,0.9);
+  color:black;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  transform:translateY(100%);
+  transition:.4s;
+}
+
+.project-card:hover .overlay{
+  transform:translateY(0);
+}
+
+/* FORM */
+form{
+  max-width:400px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+input,textarea{
+  padding:10px;
+  border:none;
+}
+
+button{
+  background:#38bdf8;
+  border:none;
+  padding:10px;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  padding:15px;
+  background:#020617;
+}
