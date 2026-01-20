@@ -48,6 +48,7 @@ nav a{
   width:280px;
   border-radius:50%;
   border:4px solid #38bdf8;
+  object-fit:cover;
 }
 
 /* SECTION */
@@ -167,3 +168,4 @@ footer{
   padding:15px;
   background:#020617;
 }
+
